@@ -14,6 +14,8 @@ public class NewEventRequestTO {
     @NotEmpty @NotNull
     private String eventDescription;
     @NotEmpty @NotNull
+    private String eventImage;
+    @NotEmpty @NotNull
     private String eventOrganizers;
     @NotEmpty @NotNull
     private String eventPrice;
@@ -42,6 +44,14 @@ public class NewEventRequestTO {
 
     public void setEventDescription(String eventDescription) {
         this.eventDescription = eventDescription;
+    }
+
+    public String getEventImage() {
+        return eventImage;
+    }
+
+    public void setEventImage(String eventImage) {
+        this.eventImage = eventImage;
     }
 
     @Schema(description = "Representa o organizador do evento", required = true, example = "os compadres")

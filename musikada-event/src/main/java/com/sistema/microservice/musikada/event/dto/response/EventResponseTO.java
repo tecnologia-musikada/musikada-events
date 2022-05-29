@@ -9,6 +9,7 @@ public class EventResponseTO {
     private String eventId;
     private String eventTitle;
     private String eventDescription;
+    private String eventImage;
     private String eventOrganizers;
     private String eventPrice;
     private String eventStartDate;
@@ -34,6 +35,14 @@ public class EventResponseTO {
 
     public void setEventDescription(String eventDescription) {
         this.eventDescription = eventDescription;
+    }
+
+    public String getEventImage() {
+        return eventImage;
+    }
+
+    public void setEventImage(String eventImage) {
+        this.eventImage = eventImage;
     }
 
     @Schema(description = "Representa o organizador do evento", required = true, example = "os compadres")

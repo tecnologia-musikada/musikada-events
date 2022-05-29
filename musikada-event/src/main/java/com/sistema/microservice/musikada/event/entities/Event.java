@@ -7,6 +7,7 @@ import io.quarkus.mongodb.panache.common.MongoEntity;
 public class Event extends PanacheMongoEntity {
     private String eventTitle;
     private String eventDescription;
+    private String eventImage;
     private String eventOrganizers;
     private String eventPrice;
     private String eventStartDate;
@@ -29,6 +30,14 @@ public class Event extends PanacheMongoEntity {
 
     public void setEventDescription(String eventDescription) {
         this.eventDescription = eventDescription;
+    }
+
+    public String getEventImage() {
+        return eventImage;
+    }
+
+    public void setEventImage(String eventImage) {
+        this.eventImage = eventImage;
     }
 
     public String getEventOrganizers() {
